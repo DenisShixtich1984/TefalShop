@@ -9,4 +9,10 @@ public class StartTest extends BaseTest{
     public void firstTest () {
         startPage.titleTefal.shouldBe(visible);
     }
+    @Test
+    public void clickUltimateButton () {
+        startPage.titleTefal.shouldBe(visible);
+        startPage.clickUltimateButton();
+        startPage.ultimateTitle.shouldBe(visible);
+    }
 }
